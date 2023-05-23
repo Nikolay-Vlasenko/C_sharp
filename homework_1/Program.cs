@@ -25,16 +25,16 @@ else
 //44 5 78 -> 78
 //22 3 9 -> 22
 Console.Write("Введите первое число: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
+int firstNumber1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+int secondNumber1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 if (firstNumber > secondNumber)
     {   
-        if (firstNumber > thirdNumber)
+        if (firstNumber1 > thirdNumber)
         {
-            Console.WriteLine(firstNumber + " является максимальным");
+            Console.WriteLine(firstNumber1 + " является максимальным");
         }
         else 
         {
@@ -43,9 +43,9 @@ if (firstNumber > secondNumber)
     }
     else
     {
-        if (secondNumber > thirdNumber)
+        if (secondNumber1 > thirdNumber)
         {
-            Console.WriteLine(secondNumber + " является максимальным");
+            Console.WriteLine(secondNumber1 + " является максимальным");
         }
         else 
         {
