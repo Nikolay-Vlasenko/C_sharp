@@ -1,4 +1,4 @@
-﻿void GenNumbers(int[] arr)
+﻿﻿void GenNumbers(int[] arr)
         {
             Random rnd = new Random();
 
@@ -18,21 +18,21 @@
                 Console.WriteLine(arr[i]);
             }
 
-int[] arr = new int[10]; // { 0,0,0,0,0,0....}
+int[] arr1 = new int[10]; // { 0,0,0,0,0,0....}
 
             GenNumbers(arr); // { 15,15,64,16,83....}
 
-            for (int i = 0; i < arr.Length; i++) // 0 = 15
+            for (int i = 0; i < arr1.Length; i++) // 0 = 15
             {
-                int left = arr[i] / 10; // 15 / 10 = 1
-                int right = arr[i] % 10; // 15 % 10 = 5
+                int left = arr1[i] / 10; // 15 / 10 = 1
+                int right = arr1[i] % 10; // 15 % 10 = 5
                 if (left > right)
                 {
-                    Console.WriteLine($"Наибольшая цифра числа {arr[i]} = " + left);
+                    Console.WriteLine($"Наибольшая цифра числа {arr1[i]} = " + left);
                 }
                 else
                 {
-                    Console.WriteLine($"Наибольшая цифра числа {arr[i]} = " + right);
+                    Console.WriteLine($"Наибольшая цифра числа {arr1[i]} = " + right);
                 }
             }
 
@@ -53,21 +53,21 @@ Random rnd = new Random();
 
 
 
-            int a = int.Parse(Console.ReadLine()); // Convet.ToInt32() = int.Parse()
-            int b = int.Parse(Console.ReadLine()); // Convet.ToInt32() = int.Parse()
-            if (b % a == 0)
+            int a1 = int.Parse(Console.ReadLine()); // Convet.ToInt32() = int.Parse()
+            int b1 = int.Parse(Console.ReadLine()); // Convet.ToInt32() = int.Parse()
+            if (b1 % a1 == 0)
             {
                 Console.WriteLine("Кратное");
             }
             else
             {
-                Console.WriteLine(b % a);
+                Console.WriteLine(b1 % a1);
             }
 
-            int rndNum = rnd.Next(100, 1000); // array 100-999
-Console.WriteLine(rndNum);
+            int rndNum1 = rnd.Next(100, 1000); // array 100-999
+Console.WriteLine(rndNum1);
 
-int a = rndNum / 100; // 
+int a2 = rndNum / 100; // 
 int c = rndNum % 10; //
-int res = 10 * a + c;
+int res = 10 * a2 + c;
 Console.Write(res);
